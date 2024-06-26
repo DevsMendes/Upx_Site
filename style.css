@@ -1,0 +1,188 @@
+/* ESTILO GERAL*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: black;
+    height: 100%;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.vertical-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Espaço entre o texto, vídeo e imagem */
+}
+
+/* ESTILO DO CABECALHO*/
+header{
+    padding: 40px 4%;
+    position: relative; /* Adicionado para posicionar os links relativamente */
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: rgb(133, 133, 133);
+    text-align: none;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover{
+    color: #fff;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;
+    text-align: center; /* Centraliza os links */
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+/* Posiciona os links no centro */
+header nav ul li:nth-child(1){
+    margin-left: 400px; /* Ajusta o espaço entre a borda esquerda e o primeiro link */
+    margin-bottom: 50px; /* Adiciona margem inferior aos links */
+}
+
+.logo {
+    position: absolute;
+    top: 10px; /* Ajuste a distância do topo conforme necessário */
+    left: 10px; /* Ajuste a distância da esquerda conforme necessário */
+    z-index: 1000; /* Garante que a logo esteja na frente de outros elementos */
+}
+
+/* ESTILO DO TOP DO SITE*/
+section.topo-do-site {
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1 {
+    color: #fff;
+    font-size: 30px;
+    line-height: 80px;
+    text-align: center; /* Centraliza o texto */
+}
+
+.topo-do-site .txt-topo-site h1 span {
+    color: rgb(47, 134, 192);
+    font-size: 64px;
+}
+
+.topo-do-site .txt-topo-site p {
+    color: #fff;
+    margin: 20px 0; /* Adiciona espaço superior e inferior ao parágrafo */
+    text-align: center;
+}
+
+.video-container, .imagem-container {
+    margin-top: 30px; /* Adiciona espaço acima do vídeo e da imagem */
+    text-align: center; /* Centraliza o conteúdo */
+}
+
+.video-container h3, .imagem-container h3 {
+    color: #fff; /* Cor branca para o título */
+    font-size: 24px; /* Tamanho da fonte para o título */
+    text-align: center; /* Centraliza o texto */
+    margin-bottom: 10px; /* Espaço abaixo do título */
+}
+
+.texto-projeto {
+    text-align: center; /* Alinhando o texto ao centro */
+    font-size: 14px; /* Reduzindo o tamanho do texto */
+    max-width: 2000px; /* Definindo uma largura máxima para o texto */
+    margin-bottom: 20px; /* Adiciona espaço abaixo do texto do projeto */
+}
+
+h2 {
+    color: #fff;
+    font-size: 40px;
+    line-height: 80px;
+    text-align: center; /* Centraliza o texto */
+}
+
+h2 span {
+    color: rgb(47, 134, 192);
+    font-size: 64px;
+}
+
+h1, h2, p {
+    color: #fff; /* Certificando-se de que todos os textos tenham cor branca */
+}
+/* Adicione este estilo para a seção de participantes */
+
+.participantes {
+    padding: 40px 4%;
+}
+
+.participantes h2 {
+    color: #fff;
+    font-size: 40px;
+    line-height: 80px;
+    text-align: center; /* Centraliza o texto */
+}
+
+.participantes h2 span {
+    color: rgb(47, 134, 192);
+    font-size: 64px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que os participantes quebrem para a linha seguinte */
+    gap: 20px; /* Espaço entre os participantes */
+}
+
+.participante {
+    text-align: center;
+    border: 1px solid #fff; /* Borda branca */
+    padding: 20px; /* Espaçamento interno */
+    max-width: 300px; /* Largura máxima */
+    margin: 10px; /* Margem entre os participantes */
+}
+
+.participante h3 {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 5px; /* Espaço abaixo do nome do participante */
+    display: inline; /* Exibe os nomes lado a lado */
+}
+
+.participante p {
+    color: #fff;
+    font-size: 14px;
+    display: inline-block; /* Exibe os RAs lado a lado */
+    margin-top: 5px; /* Espaço acima dos RAs */
+}
+
